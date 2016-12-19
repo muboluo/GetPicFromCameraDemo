@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="camera.from.pic.get.getpicfromcamerademo.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:id="@+id/txt_abandon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:text="放弃"
+            android:textColor="#000"
+            android:textSize="14dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="50dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#555"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="11dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="#fff"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_share_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="分享内容"
+        android:textColor="#000"
+        android:textColorHint="#999"
+        android:textSize="14dp"
+        android:maxLength="300"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_show_record_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="先是在记录页"
+            android:textColor="#999"
+            android:textSize="14dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_content_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="(字数0/300)"
+            android:textColor="#999"
+            android:textSize="14dp"
+            />
+    </RelativeLayout>
+</LinearLayout>
